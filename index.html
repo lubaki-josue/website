@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ma première page</title>
+    <!-- Lien de connexion -->
+    <link rel="stylesheet" href="./style.css" />
+    <script type="text/javascript" src="./anim.js" defer></script>
+  </head>
+  <body>
+    <!-- Premier Bloc -->
+    <div class="container">
+      <header>
+        <!-- Logo -->
+        <img src="./images/logo.svg" alt="logo MonCompanie" class="logo" />
+
+        <!-- Navigation -->
+        <nav>
+          <a href="#" class="hide-desktop">
+            <img
+              src="./images/ham.svg"
+              alt="toggle menu"
+              class="menu"
+              id="menu"
+            />
+          </a>
+
+          <!-- Liste Non-ordonnée -->
+          <ul class="show-desktop hide-mobile" id="nav">
+            <li id="exit" class="exit-btn hide-desktop">
+              <img src="./images/exit.svg" alt="exit menu" />
+            </li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">services</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Nouvelle Section de la page -->
+      <section>
+        <img src="./images/server.svg" alt="server graphic" class="server" />
+        <h1>On vous offre les meilleurs services!</h1>
+        <p class="subhead">On diminue vos dépenses</p>
+        <img
+          src="./images/scroll.svg"
+          alt="défiler vers le bas"
+          class="scroll hide-mobile show-desktop"
+        />
+      </section>
+    </div>
+
+    <!-- Deuxième Bloc -->
+    <div class="blue-container">
+      <div class="container">
+        <ul>
+          <li>
+            <img src="./images/icon-1.svg" alt="Calendar icon" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+          </li>
+          <li>
+            <img src="./images/icon-2.svg" alt="Calendar icon" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+          </li>
+          <li>
+            <img src="./images/icon-3.svg" alt="Calendar icon" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Troisième Bloc -->
+    <div class="gray-container">
+      <div class="container">
+        <ul>
+          <li>
+            <figure>
+              <img
+                src="./images/user1.png"
+                alt="image de témoignage de l'utilisateur"
+              />
+              <blockquote>Content de pouvoir connaitre le site</blockquote>
+              <figcaption>John Abbott</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img
+                src="./images/user2.png"
+                alt="image de témoignage de l'utilisateur"
+              />
+              <blockquote>Content de pouvoir connaitre le site</blockquote>
+              <figcaption>Yves Abbott</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Quatrième Bloc -->
+    <div class="container">
+      <h2>Commencer par ici!</h2>
+      <a href="#" class="cta">cliquez</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="container">
+          <a href="#">
+            <img src="./images/logo-white.svg" alt="logo" class="logo" />
+            <p>Université du Québec à Trois-Rivières</p>
+          </a>
+          <ul class="footer-links">
+            <li><a href="#"> Terms of Services</a></li>
+            <li><a href="#"> Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

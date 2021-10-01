@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;0,800;1,500&display=swap');
+
+/* 
+    N'oubliez pas que nous utilisons l'approche « Mobile First », donc redimensionnez
+    la largeur de votre navigateur à une largeur comparable à celle du téléphone.
+    Environ ~385px de largeur (width)
+*/
+
+/* définir notre font et enlever la margin par défaut du navigateur */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+/* taille et interligne des paragraphes et bloc des citations */
+p, blockquote {
+    font-size: .9em;
+    line-height: 1.6em;
+}
+
+/* enlever style de la liste et espace par défaut du navigateur */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Définir une taille fixe au logo */
+.logo{
+    width: 130px;
+}
+
+/* display flex pour disposer les contenus sur toute la largeur de l'ecran */
+header{
+    display: flex;
+    justify-content:space-between;
+}
+
+/* définissons notre propre largeur et margin */
+.menu{
+    width: 25px;
+    margin-top:45%;
+}
+
+/* Réduire la taille de l'image "server" et le positionner au centre de l'écran */
+/* Server Avant (sur le note de cours) */
+.server{
+    width: 70%;
+    margin: 2em auto 2em 25%;
+} 
+
+/* Server Après */
+/*.server{
+    width: 60%;
+    margin: 2em auto;
+    transition: width .8s ease;
+}*/
+
+/* définir une taille de font pour le text ciblé */
+.subhead{
+    font-size: 1.1em;
+}
+
+.blue-container{
+    background-color : #00C2FF; /* RGB(Red, Green, Blue) 0 - 9 - A - F */
+    width: 100%;
+    margin-top: 15%;
+    padding: 4em 0 2em;
+    color: rgb(255, 255, 255);
+    transform: skewY(-2deg);
+    border-top-left-radius: 40px;
+}
+
+.blue-container:before{
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-color: #00C2FF;
+    position: absolute;
+    top: -39px;
+    right: 0;
+}
+
+.blue-container:after{
+    content: '';
+    width: 80px;
+    height:80px;
+    background-color: #fff;
+    position: absolute;
+    top: -80px;
+    right: 0;
+    border-radius: 50%;
+}
+
+.blue-container ul{
+    transform: skewY(2deg);
+}
+
+.blue-container ul li{
+    margin-bottom:3em ;
+}
+
+/* définir une padding et interligne pour le paragraphe dupremier Bloc */
+.blue-container ul li p{
+    padding : 0 1.5em;
+    line-height: 1.8em;
+}
+
+
+/* Redimensionner les images */
+.blue-container img{
+    width: 14%;
+}
+
+.blue-container ul li:nth-child(3) img{
+    width: 8%;
+}
+
+.container{
+    text-align: center;
+    padding: .8em 1.2em;
+}
